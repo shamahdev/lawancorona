@@ -9,6 +9,7 @@ import "./scripts/snap.js";
 
 //Styles
 import "./styles/main.sass";
+import 'aos/dist/aos.css'
 
 AOS.init();
 library.add(faHome, faComments, faChartArea, faHeart, faUser)
