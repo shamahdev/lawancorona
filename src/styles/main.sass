@@ -1,0 +1,144 @@
+@import "_custom.sass"
+@import "~bootstrap/scss/bootstrap"
+@import '~aos/dist/aos.css'
+
+html, body
+    background-color: $white
+    scroll-behavior: smooth
+body
+    overflow-x: hidden
+    min-height: 100vh
+    height: 100%
+    position: relative
+img
+    user-select: none
+h1, h2, h3, h4, h5, p
+    font-family: "Roboto Slab"
+.display-1, .display-2, .display-3, .display-4, .display-5
+    font-family: "Roboto"
+    font-weight: 700
+.btn
+    font-family: "Roboto"
+    font-weight: 900
+    font-size: 0.95rem
+    text-transform: uppercase
+    letter-spacing: 2px
+.bg-secondary-light
+    background-color: $secondary-light
+.wave-1
+    width: 100%
+    position: absolute
+    top: 100vh
+.wave-2
+    position: absolute
+    right: 0
+    bottom: 0
+.btn-float
+    z-index: 100
+    position: fixed
+    color: $white
+    background-color: $secondary
+    text-align: center
+    padding: 1.4rem
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 100%
+    top: 75%
+    left: 20px
+    transform: translate(-50%, -50%)
+    transition: 0.3s ease-in-out left
+    &:hover
+        color: $white
+.border-small
+    border-radius: $border-radius/2
+// Sidebar
+.sidebar
+    position: sticky
+    display: inline-flex
+.btn-action
+    position: relative
+    background-color: none
+    text-align: center
+    padding: .8rem
+    border-radius: 100%
+    margin: .25rem
+    &::after
+            display: none
+    &.active
+        color: $white
+        background-color: $primary
+        &::after
+            content: ''
+.line
+    width: 35px
+    height: 2px
+    margin: auto
+    background-color: $gray-400
+.l1, .l2, .l3, .l4
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        top: 2rem
+        margin: .75rem
+        font-family: "Roboto"
+        font-size: 0.7rem
+        text-transform: uppercase
+        letter-spacing: 2px
+.l1
+    &::after
+        left: -0.5rem
+        content: 'Beranda'
+.l2
+    &::after
+        content: 'Kasus'
+.l3
+    &::after
+        left: -1.2rem
+        content: 'Pencegahan'
+.l4
+    &::after
+        left: -0.3rem
+        content: '#lawan \A corona'
+.vh-100
+        height: 100% !important
+h1
+    font-size: 2rem
+.display-4
+    font-size: 2.5rem
+.custom-form
+    border: 0
+    color: $success
+    font-family: "Roboto"
+    font-weight: 900
+    font-size: 0.95rem
+    text-transform: uppercase
+    letter-spacing: 2px
+    background-color: $success-light
+.item-list
+    display: block
+    height: 400px
+    overflow-y: scroll
+@media (min-width: 768px)
+    .wave-1
+        top: 150vh
+        width: auto
+    h1
+        font-size: 2.5rem
+    .display-4
+        font-size: 3.5rem
+    .vh-100
+        height: 100vh !important
+    .sidebar
+        position: fixed
+        display: inline-block
+    .line
+        width: 2px
+        height: 35px
+    .btn-action
+        padding: 1.3rem
+        &::after
+            display: block
+// Sidebar-end
