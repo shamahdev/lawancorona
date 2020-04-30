@@ -17,17 +17,17 @@ class SnapButton extends HTMLElement {
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="row">
-                      <div class="col-md-6">
+                  <div class="container-fluid row m-0 p-0">
+                      <div class="col-md-6 m-0 p-0">
                           <img class="img-fluid rounded-circle p-3" src="./img/shaddampixel.png" alt="">
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 m-0 p-0">
                           <h5 class="font-weight-bold">Shaddam Amru Hasibuan</h5>
                           <p>Hai, nama saya Shaddam dan ini adalah sebuah website tentang COVID-19 yang sekaligus sebagai submission saya untuk Dicoding di kelas "Belajar Fundamental Front-end development"</p>
                       </div>
                   </div>
                 </div>
-                <div class="modal-footer text-center mx-auto btn-group">
+                <div class="modal-footer text-center mx-auto btn-group p-3" style="border-top: none">
                   <a href="https://www.linkedin.com/in/shaddamah/" target="_blank" type="button" class="btn btn-primary m-0">Linkedin</a>
                   <a href="https://www.instagram.com/shaddamah/" target="_blank" type="button" class="d-none d-md-inline-block btn btn-success m-0">Instagram</a>
                   <a href="https://www.github.com/shaddamah/" target="_blank" type="button" class="btn btn-secondary m-0">Github</a>

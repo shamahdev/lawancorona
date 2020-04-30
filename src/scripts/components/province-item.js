@@ -8,10 +8,10 @@ class ProvinceItem extends HTMLElement {
     this.innerHTML =
     `<div class="item py-3 border-bottom border-success">
     <div id="name" class="row m-0 font-weight-bold">
-        <h4 class="mr-4 font-weight-bold">${this._province.attributes.Provinsi}</h4>
-        <h4 class="text-success">${this._province.attributes.Kasus_Posi}</h4>
+        <h4 class="col-7 ml-auto font-weight-bold">${this._province.attributes.Provinsi}</h4>
+        <h4 class="col-3 mr-auto text-primary font-weight-bold">${this._province.attributes.Kasus_Posi}</h4>
     </div>
-    <div class="row m-0 mt-2 font-weight-bold">
+    <div class="row m-0 mt-2 font-weight-bold text-center">
         <div class="col-4">
             <p class="mb-0">Positif</p>
             <p class="mb-0 text-success">${this._province.attributes.Kasus_Posi}</p>

@@ -13,9 +13,9 @@ class SearchBar extends HTMLElement {
     }
     render(){
         this.innerHTML = 
-        `<p class="text-center text-primary">Cara nama provinsi untuk melihat statistik kasus COVID-19 di provinsi tersebut!</p>
+        `<p class="text-center text-primary font-weight-bold">Cara nama provinsi untuk melihat statistik kasus COVID-19 di provinsi tersebut!</p>
         <div class="form-group">
-            <input id="searchProvinsi" type="search" class="custom-form form-control form-control-lg" placeholder="${this.hint}">
+            <input id="searchProvinsi" type="search" class="custom-form form-control form-control-lg py-4" placeholder="${this.hint}">
         </div>`;
     }
 }
