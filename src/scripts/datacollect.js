@@ -1,13 +1,15 @@
 class DataCollect{
     static province() {
-        return fetch(`https://api.kawalcorona.com/indonesia/provinsi/`)
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        return fetch(`${proxyUrl}https://api.kawalcorona.com/indonesia/provinsi/`)
             .then(response => response.json())
             .catch(error => {
                 return Promise.reject(error);
         })
     }
     static local() {
-        return fetch(`https://api.kawalcorona.com/indonesia/`)
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        return fetch(`${proxyUrl}https://api.kawalcorona.com/indonesia/`)
             .then(response => {
                 return response.json();
             })
@@ -20,10 +22,11 @@ class DataCollect{
             })
     }
     static global(){
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         return Promise.all([
-            fetch(`https://api.kawalcorona.com/positif/`),
-            fetch(`https://api.kawalcorona.com/sembuh/`),
-            fetch(`https://api.kawalcorona.com/meninggal/`)
+            fetch(`${proxyUrl}https://api.kawalcorona.com/positif/`),
+            fetch(`${proxyUrl}https://api.kawalcorona.com/sembuh/`),
+            fetch(`${proxyUrl}https://api.kawalcorona.com/meninggal/`)
         ])
         .then(responses => {
             return responses.map(response => response.json());
