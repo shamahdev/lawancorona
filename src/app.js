@@ -1,4 +1,5 @@
 //Modules
+import 'regenerator-runtime';
 import "bootstrap/js/dist/scrollspy";
 import "bootstrap/js/dist/modal";
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
